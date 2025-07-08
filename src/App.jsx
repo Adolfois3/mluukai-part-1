@@ -65,6 +65,14 @@ export const App =  () => {
 
       <h2>Statistics</h2>
 
+      {good > 0 || neutral > 0 ||  bad > 0 ||(
+        <p>No feedback given</p>
+      )}
+
+
+
+      {!good > 0 ||(
+        
       <table>
 
 
@@ -75,6 +83,9 @@ export const App =  () => {
       <Statistic name={"average"}  props={promedio} ></Statistic>
       <Statistic name={"positive"}  props={promedioPositivo} ></Statistic>
       </table>
+      
+
+      )}
     </div>
     </>
 
